@@ -743,8 +743,8 @@ header .portfolio_menu .burger_menu .dot_icon .dot {
 }
 .w_content h2 {
   color: #fff;
-  font-size: 120px;
-  line-height: 120px;
+  font-size: 80px;
+  line-height: 80px;
   font-weight: 700;
 }
 .w_content .circle_line {
@@ -814,7 +814,7 @@ header .portfolio_menu .burger_menu .dot_icon .dot {
 
 .wave_one_section_two {
   background-image: -moz-radial-gradient(50% 50%, circle closest-side, #fe8392 0%, #fc4057 100%);
-  background-image: -webkit-radial-gradient(50% 50%, circle closest-side, #fe8392 0%, #fc4057 100%);
+  background-image: -webkit-radial-gradient(50% 50%, circle closest-side, #08313E 0%, #010432 100%);
   background-image: -ms-radial-gradient(50% 50%, circle closest-side, #fe8392 0%, #fc4057 100%);
 }
 .wave_one_section_two .round {
@@ -898,7 +898,7 @@ header .portfolio_menu .burger_menu .dot_icon .dot {
 
 .wave_one_section_three {
   background-image: -moz-radial-gradient(50% 50%, circle closest-side, #89d48c 0%, #54b059 100%);
-  background-image: -webkit-radial-gradient(50% 50%, circle closest-side, #89d48c 0%, #54b059 100%);
+  background-image: -webkit-radial-gradient(50% 50%, circle closest-side, #08313E 0%, #010432 100%);
   background-image: -ms-radial-gradient(50% 50%, circle closest-side, #89d48c 0%, #54b059 100%);
   position: relative;
 }
@@ -941,7 +941,7 @@ header .portfolio_menu .burger_menu .dot_icon .dot {
 
 .wave_one_section_four {
   background-image: -moz-radial-gradient(50% 50%, circle closest-side, #eebd7c 0%, #e6a24e 100%);
-  background-image: -webkit-radial-gradient(50% 50%, circle closest-side, #eebd7c 0%, #e6a24e 100%);
+  background-image: -webkit-radial-gradient(50% 50%, circle closest-side, #08313E 0%, #010432 100%);
   background-image: -ms-radial-gradient(50% 50%, circle closest-side, #eebd7c 0%, #e6a24e 100%);
 }
 .wave_one_section_four.active .img_screen.one {
