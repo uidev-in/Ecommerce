@@ -59,7 +59,7 @@
                             </a>
                         </li>
                         <li class="nav-item ">
-                            <a class="nav-link " href="#">
+                            <a class="nav-link " href="#contact-sec">
                                 Contact Us
                             </a>
                         </li>
@@ -214,7 +214,8 @@
         </section>
         <!--        section_four      -->
 
-        <div class="section wave_two_section_seven fp-section fp-table active fp-completely" style="height: 555px;"><div class="fp-tableCell" style="height: 555px;">
+         <!--        section_five      -->
+        <div id="contact-sec" class="section wave_two_section_seven">
             <div class="t_first p_absoulte"><img class="layer layer2" data-depth="-0.20" src="img/home_three/round.png" alt="" style="position: absolute; display: block; left: 0px; top: 0px; transform: translate3d(-30.88px, 0px, 0px); transform-style: preserve-3d; backface-visibility: hidden;"></div>
             <div class="t_two p_absoulte"><img class="layer layer2" data-depth="0.20" src="img/home_three/clients_plan.png" alt="" style="position: absolute; display: block; left: 0px; top: 0px; transform: translate3d(30.88px, 0px, 0px); transform-style: preserve-3d; backface-visibility: hidden;"></div>
             <div class="t_three p_absoulte"><img class="layer layer2" data-depth="-0.20" src="img/home_three/blue_plan.png" alt="" style="position: absolute; display: block; left: 0px; top: 0px; transform: translate3d(-30.88px, 0px, 0px); transform-style: preserve-3d; backface-visibility: hidden;"></div>
@@ -237,13 +238,23 @@
                         <div class="col-lg-5">
                             <form action="#" class="contact_form_box" method="post" id="contactForm">
                                 <div class="form-group text_box">
-                                    <input type="text" name="name" placeholder="Your Name">
+                                    <input type="text" name="name" placeholder="Your Name *" required>
                                 </div>
                                 <div class="form-group text_box">
-                                    <input type="text" name="email" placeholder="Your Email">
+                                    <input type="text" name="email" placeholder="Your Email *" required>
                                 </div>
                                 <div class="form-group text_box">
-                                    <textarea name="message" cols="30" rows="10" placeholder="Enter Your Message . . ."></textarea>
+                                    <input type="text" name="mobile" placeholder="Your Phone Number *" required>
+                                </div>
+                                <div class="form-group text_box">
+                                    <select name="language" required>
+                                        <option value="0" selected>Select Preferred Language</option>
+                                        <option value="english">English</option>
+                                        <option value="hindi">Hindi</option>
+                                    </select>
+                                </div>
+                                <div class="form-group text_box">
+                                    <textarea name="message" cols="30" rows="10" placeholder="Enter Your Message . . ." required></textarea>
                                 </div>
                                 <button type="submit" class="p_btn">Submit Now</button>
                             </form>
@@ -251,9 +262,11 @@
                     </div>
                 </div>
             </div>
-        </div></div>
+            
+        </div>
+         <!--        section_five      -->
 
-        <!--        section_five      -->
+        <!--        section_six     -->
         <section class="section fp-auto-height w_footer_area">
             <div class="inro">
                 <div class="container custom_container">
@@ -272,7 +285,7 @@
                 </div>
             </div>
         </section>
-        <!--        section_five      -->
+        <!--        section_six      -->
     </div>
 
     <!--        full_footer      -->

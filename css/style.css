@@ -1863,7 +1863,7 @@ header .portfolio_menu .burger_menu .dot_icon .dot {
   width: 100%;
   margin-bottom: 28px;
 }
-.contact_form_box .text_box input, .contact_form_box .text_box textarea {
+.contact_form_box .text_box input,.contact_form_box .text_box select, .contact_form_box .text_box textarea {
   width: 100%;
   height: 36px;
   font-size: 12px;
@@ -1874,6 +1874,7 @@ header .portfolio_menu .burger_menu .dot_icon .dot {
   border-radius: 0px;
   color: #fff;
 }
+.contact_form_box .text_box select option { color: black; }
 .contact_form_box .text_box input.placeholder, .contact_form_box .text_box textarea.placeholder {
   color: #fff;
 }
@@ -1886,7 +1887,7 @@ header .portfolio_menu .burger_menu .dot_icon .dot {
 .contact_form_box .text_box input::-webkit-input-placeholder, .contact_form_box .text_box textarea::-webkit-input-placeholder {
   color: #fff;
 }
-.contact_form_box .text_box:nth-child(3) {
+.contact_form_box .text_box:nth-child(5) {
   margin-top: 70px;
 }
 .contact_form_box .p_btn {
