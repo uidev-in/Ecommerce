@@ -1469,7 +1469,7 @@ header .portfolio_menu .burger_menu .dot_icon .dot {
 }
 
 .scroll_service_item {
-  border: 1px solid #f3c58e;
+  border: 1px solid #62B337;
   padding: 40px;
   color: #fff;
   position: relative;
@@ -1483,7 +1483,7 @@ header .portfolio_menu .burger_menu .dot_icon .dot {
   height: 2px;
   bottom: 0;
   left: 0;
-  background: #f3c58e;
+  background: #62B337;
   position: absolute;
   z-index: 0;
   opacity: 0;
@@ -1509,8 +1509,8 @@ header .portfolio_menu .burger_menu .dot_icon .dot {
   margin-bottom: 32px;
 }
 .scroll_service_item .p_btn {
-  background: #fd2d4d;
-  border-color: #f3c58e;
+  background: #82C424;
+  border-color: #ffffff;
 }
 .scroll_service_item .p_btn:hover {
   background: #fff;
@@ -1797,7 +1797,7 @@ header .portfolio_menu .burger_menu .dot_icon .dot {
 /*================ wave_two_section_seven ==============*/
 .wave_two_section_seven {
   background-image: -moz-radial-gradient(50% 50%, circle closest-side, rgba(65, 65, 65, 0.98) 0%, #242424 100%);
-  background-image: -webkit-radial-gradient(50% 50%, circle closest-side, rgba(65, 65, 65, 0.98) 0%, #242424 100%);
+  background-image: -webkit-radial-gradient(50% 50%, circle closest-side, #08313E, #010432 100%);
   background-image: -ms-radial-gradient(50% 50%, circle closest-side, rgba(65, 65, 65, 0.98) 0%, #242424 100%);
 }
 .wave_two_section_seven .dot_one {
