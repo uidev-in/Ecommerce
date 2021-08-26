@@ -60,7 +60,6 @@
             color: #222;
         }
 
-
 #footer .footer-top{
   background-color:transparent;
 }
@@ -372,7 +371,10 @@
                                      <li><i class="las la-check-double"></i> ExMyB Plus (Warranty): 3 Months</li>
                                 
                               </ul>
-                                <a href="#" class="p_btn">Contact Us</a>
+                                <a href="#" class="p_btn" >₹19,999/-</a>
+
+                                <a href="#" class="p_btn select_val" data-select="Shop" data-toggle="modal" data-target="#FormModal">BUY NOW</a>
+                          
                             </div>
                         </div>
                         <div class="col-lg-6">
@@ -416,7 +418,10 @@
                                      
                                 
                               </ul>
-                                <a href="#" class="p_btn">Contact Us</a>
+                         
+                                <a href="#" class="p_btn" >₹64,999/-</a>
+                                 
+                                <a href="#" class="p_btn select_val" data-select="Shop Pro" data-toggle="modal" data-target="#FormModal">BUY NOW</a>
                             </div>
                         </div>
                         <div class="col-lg-6">
@@ -469,7 +474,7 @@
                                     <select name="language" required>
                                         <option value="0" selected>Select Service</option>
                                         <option value="Shop">Shop</option>
-                                        <option value="ShopPro">Shop Pro</option>
+                                        <option value="Shop Pro">Shop Pro</option>
                                     </select>
                                 </div>
                                 <!-- <div class="form-group text_box">
@@ -590,16 +595,17 @@
       
                           <!-- Phone Number -->
                           <div class="input-group col-lg-12 mb-4">
-                            <input style="padding: 10px!important;" id="ctaContact" type="number" name="phone" placeholder="Phone Number" class="form-control pp-form-input bg-white border-sm" required=""
-                            maxlength = "10" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);">
+                            <input style="padding: 10px!important;width: 100%;"  class="form-control pp-form-input bg-white border-sm" name="phone" id='txtPhone' placeholder="Enter 10 Digit Number." maxlength="10"required=""
+                           >
+                           <span id="spnPhoneStatus"></span>
                           </div>
                           
                           <!-- Preferred language -->
                           <div class="input-group col-lg-12 mb-4">
                             <select required style="padding: 6px 10px!important;" id="preferred_language" name="preferred_language" class="form-control pp-form-select custom-select bg-white  border-sm dropdown" title="Choose Preferred language">
-                                <option value="" selected>Choose Service </option>
-                                <option value="English">Shop</option>
-                                <option value="Hindi">Shop Pro</option>
+                                <!-- <option value="" selected>Choose Service </option> -->
+                                <option value="Shop">Shop</option>
+                                <option value="Shop Pro">Shop Pro</option>
                             </select>
                             
                            </div>
@@ -607,7 +613,7 @@
                           <!-- Submit Button -->
                           <div class="form-group col-lg-12 mx-auto mb-0 text-center">
                               
-                              <button class="p_btn m-auto bg-dark"  type="submit" name="submit_signup" style="color: #fff;border: 1px solid #222;">Submit Now</button>
+                              <button class="p_btn m-auto bg-dark"   type="submit" name="submit_signup" style="color: #fff;border: 1px solid #222;">Submit Now</button>
                           </div>
       
                     </div>
@@ -637,6 +643,53 @@
             $('#footer_section, #footer_section .fp-tableCell, #footer_section .fp-scrollable').attr('style', 'height: 0px !important');   
         });
    </script>
+    <script type="text/javascript">
+        
+         // validation
+   $('.select_val').click(function() {
+           var click_value = $(this).data("select");
+          
+            // console.log('hey sourabh',click_value);
+            $('select#preferred_language option:selected').removeAttr('selected');
+            // $("select#preferred_language option").each(function(){
+            //   if ($(this).val() === click_value)
+            //     console.log('hey sourabh223456',click_value);
+            //     $(this).attr("selected","selected");
+               
+            // });
+            $('select#preferred_language').val(click_value);
+
+
+         });
+
+
+         
+$(document).ready(function() {
+    $('#txtPhone').blur(function(e) {
+        if (validatePhone('txtPhone')) {
+          console.log('xdgfchgvjhbkjn')
+            $('#spnPhoneStatus').html('Valid Mobile Number');
+            $('#spnPhoneStatus').css({'display':'none','color':'green'});
+        }
+        else {
+            $('#spnPhoneStatus').html('Invalid Mobile Number');
+            $('#spnPhoneStatus').css('color', 'red');
+        }
+    });
+});
+
+function validatePhone(txtPhone) {
+    var a = document.getElementById(txtPhone).value;
+    var filter = /[1-9]{1}[0-9]{9}/;
+    if (filter.test(a)) {
+        return true;
+    }
+    else {
+        return false;
+    }
+}
+
+    </script>
 </body>
 
 </html>
