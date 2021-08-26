@@ -23,6 +23,7 @@
         .bg-grey{
             background-color: #f1f2f6;
         }
+<<<<<<< HEAD
 
 
 #footer .footer-top{
@@ -130,6 +131,44 @@
     color: #dee2e6;;   
     padding: 0 10px;
 }
+
+        .cta-form-card {
+            background-color: #FFF;
+            max-width: 600px;
+            border-radius: 10px;
+            margin: auto;
+            padding: 0px 10px;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+            /* box-shadow: 0px 10px 15px 0 rgb(0 0 0 / 20%); */
+        }
+        .cta-form-card button.close {
+            position: absolute;
+            font-weight: 400;
+            top: 0;
+            right: 0;
+            color: #222;
+            border: 1px solid #222;
+            padding: 5px 10px!important;
+            border-radius: 50%;
+            opacity: 1!important;
+            -webkit-transition: -webkit-transform 600ms;
+            -moz-transition: -moz-transform 600ms;
+            -ms-transition: -ms-transform 600ms;
+            -o-transition: -o-transform 600ms;
+            transition: transform 600ms;
+        }
+        .pp-form input, .pp-form select{
+            
+            outline: unset;
+            font: normal normal normal 16px/19px ;
+            letter-spacing: -0.24px;
+            color: #000000;
+            height: 45px;
+        }
+        .pp-form input::placeholder{
+            color: #222;
+        }
 
     </style>
 
@@ -317,6 +356,7 @@
                         <div class="col-lg-6">
                             <div class="w_content_two">
                                 <h2>Shop </h2>
+
                                    <ul class="list-style--1" style="list-style: none;">
                                    
                                      <li><i class="fa fa-check"></i> Wish List</li>
@@ -333,7 +373,10 @@
                                      
                                 
                               </ul>
-                                <a href="#" class="p_btn">Contact Us</a>
+                                <a href="#" class="p_btn" >₹19,999/-</a>
+
+                                <a href="#" class="p_btn" data-toggle="modal" data-target="#FormModal">BUY NOW</a>
+                          
                             </div>
                         </div>
                         <div class="col-lg-6">
@@ -361,6 +404,7 @@
                         <div class="col-lg-6">
                             <div class="w_content_two">
                                 <h2>Shop PRO</h2>
+
                                 
                                  <ul class="list-style--1" style="list-style: none;">
                                    
@@ -380,7 +424,10 @@
                                      
                                 
                               </ul>
-                                <a href="#" class="p_btn">Contact Us</a>
+                         
+                                <a href="#" class="p_btn" >₹64,999/-</a>
+                                 
+                                <a href="#" class="p_btn" data-toggle="modal" data-target="#FormModal">BUY NOW</a>
                             </div>
                         </div>
                         <div class="col-lg-6">
@@ -431,14 +478,14 @@
                                 </div>
                                 <div class="form-group text_box">
                                     <select name="language" required>
-                                        <option value="0" selected>Select Preferred Language</option>
-                                        <option value="english">English</option>
-                                        <option value="hindi">Hindi</option>
+                                        <option value="0" selected>Select Service</option>
+                                        <option value="Shop">Shop</option>
+                                        <option value="ShopPro">Shop Pro</option>
                                     </select>
                                 </div>
-                                <div class="form-group text_box">
+                                <!-- <div class="form-group text_box">
                                     <textarea name="message" cols="30" rows="10" placeholder="Enter Your Message . . ." required></textarea>
-                                </div>
+                                </div> -->
                                 <button type="submit" class="p_btn">Submit Now</button>
                             </form>
                         </div>
@@ -536,6 +583,57 @@
 
     <!--        full_footer      -->
 
+    
+<!--CTA Modal-->
+<div class="modal fade" id="FormModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content p-4">
+            <div class="modal-body">
+              <div class="cta-form-card">
+                <button type="button" class="close p-2" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
+                <h4 class="text-center pt-0 pb-4 mb-0">Step <b>1</b></h4>
+                <form class="pp-form" method="POST">
+                    <div class="row">
+                          <!-- First Name -->
+                          <div class="input-group col-lg-12 mb-4">
+                            <input style="padding: 10px!important;" id="ctafirstname" type="text" name="name" placeholder="Full Name" class="form-control pp-form-input bg-white border-sm" required="">
+                          </div>
+      
+                          <!-- Phone Number -->
+                          <div class="input-group col-lg-12 mb-4">
+                            <input style="padding: 10px!important;width: 100%;"  class="form-control pp-form-input bg-white border-sm" name="phone" id='txtPhone' placeholder="Enter 10 Digit Number." maxlength="10"required=""
+                           >
+                           <span id="spnPhoneStatus"></span>
+                          </div>
+                          
+                          <!-- Preferred language -->
+                          <div class="input-group col-lg-12 mb-4">
+                            <select required style="padding: 6px 10px!important;" id="preferred_language" name="preferred_language" class="form-control pp-form-select custom-select bg-white  border-sm dropdown" title="Choose Preferred language">
+                                <option value="" selected>Choose Service </option>
+                                <option value="English">Shop</option>
+                                <option value="Hindi">Shop Pro</option>
+                            </select>
+                            
+                           </div>
+  
+                          <!-- Submit Button -->
+                          <div class="form-group col-lg-12 mx-auto mb-0 text-center">
+                              
+                              <button class="p_btn m-auto bg-dark"   type="submit" name="submit_signup" style="color: #fff;border: 1px solid #222;">Submit Now</button>
+                          </div>
+      
+                    </div>
+                    
+                  </form>
+              </div>
+            </div>
+            <!-- <div class="modal-footer pt-4"> <button type="button" class="btn btn-light mx-auto" style="width:45%" data-dismiss="modal">Cancel</button> <button type="button" class="btn login-btn mx-auto" style="width:45%">Send</button> </div> -->
+        </div>
+    </div>
+  </div>
+  <!--CTA Modal-->
+  
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="js/jquery-3.2.1.min.js"></script>
@@ -545,6 +643,38 @@
     <script src="vendors/fullpage/fullpage.js"></script>
     <script src="js/parallax.js"></script>
     <script src="js/custom.js"></script>
+
+    <script type="text/javascript">
+        
+         // validation
+
+         
+$(document).ready(function() {
+    $('#txtPhone').blur(function(e) {
+        if (validatePhone('txtPhone')) {
+          console.log('xdgfchgvjhbkjn')
+            $('#spnPhoneStatus').html('Valid Mobile Number');
+            $('#spnPhoneStatus').css({'display':'none','color':'green'});
+        }
+        else {
+            $('#spnPhoneStatus').html('Invalid Mobile Number');
+            $('#spnPhoneStatus').css('color', 'red');
+        }
+    });
+});
+
+function validatePhone(txtPhone) {
+    var a = document.getElementById(txtPhone).value;
+    var filter = /[1-9]{1}[0-9]{9}/;
+    if (filter.test(a)) {
+        return true;
+    }
+    else {
+        return false;
+    }
+}
+
+    </script>
 </body>
 
 </html>
